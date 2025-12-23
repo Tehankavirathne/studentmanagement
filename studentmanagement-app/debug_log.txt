@@ -1,0 +1,11 @@
+Exception: Undefined constant "InnoDB"
+File: D:\studentmanagement\studentmanagement-app\config\database.php on line 34
+Stack trace:
+#0 D:\studentmanagement\studentmanagement-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php(115): require()
+#1 D:\studentmanagement\studentmanagement-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php(115): Illuminate\Foundation\Bootstrap\LoadConfiguration->{closure:Illuminate\Foundation\Bootstrap\LoadConfiguration::loadConfigurationFile():115}()
+#2 D:\studentmanagement\studentmanagement-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php(96): Illuminate\Foundation\Bootstrap\LoadConfiguration->loadConfigurationFile(Object(Illuminate\Config\Repository), 'database', 'D:\\studentmanag...', Array)
+#3 D:\studentmanagement\studentmanagement-app\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\LoadConfiguration.php(55): Illuminate\Foundation\Bootstrap\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\Foundation\Application), Object(Illuminate\Config\Repository))
+#4 D:\studentmanagement\studentmanagement-app\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(342): Illuminate\Foundation\Bootstrap\LoadConfiguration->bootstrap(Object(Illuminate\Foundation\Application))
+#5 D:\studentmanagement\studentmanagement-app\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(473): Illuminate\Foundation\Application->bootstrapWith(Array)
+#6 D:\studentmanagement\studentmanagement-app\debug_error.php(9): Illuminate\Foundation\Console\Kernel->bootstrap()
+#7 {main}
