@@ -38,7 +38,20 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <!-- Navbar content can go here if needed -->
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                @guest
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+                                @else
+                                    <li class="nav-item"><span class="nav-link">Hello, {{ Auth::user()->name }}</span></li>
+                                    <li class="nav-item">
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <button type="submit" class="btn btn-link nav-link" style="display:inline; padding:0;">Logout</button>
+                                        </form>
+                                    </li>
+                                @endguest
+                            </ul>
                         </div>
                     </div>
                 </nav>
